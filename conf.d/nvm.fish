@@ -1,3 +1,8 @@
+export NVM_DIR="$HOME/.nvm"
+function nvm
+    bass source $NVM_DIR/nvm.sh ';' nvm $argv
+end
+
 function _nvm_install --on-event nvm_install
     set --query XDG_DATA_HOME || set --local XDG_DATA_HOME ~/.local/share
     set --universal nvm_data $XDG_DATA_HOME/nvm
@@ -27,3 +32,4 @@ if status is-interactive && set --query nvm_default_version && ! set --query nvm
     nvm use $nvm_default_version >/dev/null
 end
 
+set -g nvm_default_version 16

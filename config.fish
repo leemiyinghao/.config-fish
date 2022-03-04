@@ -8,7 +8,6 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/local/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
-export NVM_DIR="$HOME/.nvm"
 
 export LSP_USE_PLISTS=true
 
@@ -29,13 +28,12 @@ set -gx  LC_ALL en_US.UTF-8
 # starship
 starship init fish | source
 
-# nvm
-set -g nvm_default_version 16
-bass source $NVM_DIR/nvm.sh
-
 # pipenv
 set pipenv_fish_fancy yes
 
 # libcurl
 #export LD_LIBRARY_PATH="$HOME/.local/lib:$LD_LIBRARY_PATH"
 #export PKG_CONFIG_PATH="$HOME/.local/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+# fish_ssh_agent
+fish_ssh_agent
