@@ -1,6 +1,5 @@
 # macos
-fish_add_path /opt/homebrew/bin
-fish_add_path /opt/homebrew/sbin
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
 # office
 export PATH="$HOME/.poetry/bin:$PATH"
