@@ -8,6 +8,9 @@ export PATH="$HOME/local/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# snap
+export PATH="/snap/bin:$PATH"
+
 export LSP_USE_PLISTS=true
 
 # theme
